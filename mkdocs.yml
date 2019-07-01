@@ -1,0 +1,58 @@
+# Project information
+site_name: 'Mobile Coding Hub'
+site_description: |
+    The conventional barriers of PC Only Coding are being broken day to day by the advancement of technologies
+    At MCH, we aspire to make the masses more aware about the possibilities of mobile coding. May it be your phone/tablet/browser on a toaster(Yes, they do exist!)
+site_author: 'AXVin'
+site_url: 'https://axvin.tk/mobile-coding-hub'
+
+# Repository
+# repo_name: 'AXVin/axvin.github.io'
+# repo_url: 'https://github.com/AXVin/axvin.github.io'
+
+
+# Copyright
+copyright: 'Copyright &copy; 2019 - 2020 AXVin'
+
+# Navigation
+nav:
+    - Home: index.md
+    - Getting Started: started.md
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'teal'
+    accent: 'orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  social:
+    - type: 'discord'
+      link: 'https://discord.gg/SVh4jJP'
+    - type: 'patreon'
+      link: 'https://patreon.com/AXVin'
+    - type: 'github'
+      link: 'https://github.com/AXVin'
+    - type: 'twitter'
+      link: 'https://twitter.com/_AXVin_'
+    - type: 'bitbucket'
+      link: 'https://bitbucket.org/AXVin'
+    - type: 'instagram'
+      link: 'https://instagram.com/__axvin__'
+    - type: 'trello'
+      link: 'https://trello.com/axvin'
+  version: 1.0
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
