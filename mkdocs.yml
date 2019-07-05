@@ -1,14 +1,14 @@
 # Project information
 site_name: 'Mobile Coding Hub'
-site_description: |
-    The conventional barriers of PC Only Coding are being broken day to day by the advancement of technologies
-    At MCH, we aspire to make the masses more aware about the possibilities of mobile coding. May it be your phone/tablet/browser on a toaster(Yes, they do exist!)
+site_description:
+    The conventional barriers of PC Only Coding are being broken day to day by the advancement in technologies.
+    At MCH, we aspire to make the masses more aware about the possibilities of mobile coding. May it be your phone/tablet/browser on a toaster!(Yes, they do exist!)
 site_author: 'AXVin'
-site_url: 'https://axvin.tk/mobile-coding-hub'
+site_url: 'https://mobile-coding-hub.github.io'
 
 # Repository
-# repo_name: 'AXVin/axvin.github.io'
-# repo_url: 'https://github.com/AXVin/axvin.github.io'
+repo_name: 'mobile-coding-hub/mobile-coding-hub.github.io'
+repo_url: 'https://github.com/mobile-coding-hub/mobile-coding-hub.github.io'
 
 
 # Copyright
@@ -18,41 +18,80 @@ copyright: 'Copyright &copy; 2019 - 2020 AXVin'
 nav:
     - Home: index.md
     - Getting Started: started.md
+    - Termux:
+        - Introduction: termux/index.md
+        - Installation: termux/installation.md
+        - Customisation: termux/customisation.md
+    - Help & Support: support.md
 
 # Configuration
 theme:
-  name: 'material'
-  language: 'en'
-  palette:
-    primary: 'teal'
-    accent: 'orange'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    name: 'material'
+    custom_dir: 'themes'
+    language: 'en'
+    palette:
+        primary: 'teal'
+        accent: 'orange'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+    feature:
+        tabs: true
+    logo: 'images/MCH_Mobile.svg'
+    shortcuts:
+        help: 72     # h
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+google_analytics:
+  - 'UA-143099709-1'
+  - 'auto'
 
 # Customization
 extra:
-  social:
-    - type: 'discord'
-      link: 'https://discord.gg/SVh4jJP'
-    - type: 'patreon'
-      link: 'https://patreon.com/AXVin'
-    - type: 'github'
-      link: 'https://github.com/AXVin'
-    - type: 'twitter'
-      link: 'https://twitter.com/_AXVin_'
-    - type: 'bitbucket'
-      link: 'https://bitbucket.org/AXVin'
-    - type: 'instagram'
-      link: 'https://instagram.com/__axvin__'
-    - type: 'trello'
-      link: 'https://trello.com/axvin'
-  version: 1.0
+    social:
+        - type: 'discord'
+          link: 'https://discord.gg/SVh4jJP'
+        - type: 'patreon'
+          link: 'https://patreon.com/AXVin'
+        - type: 'github'
+          link: 'https://github.com/AXVin'
+        - type: 'twitter'
+          link: 'https://twitter.com/_AXVin_'
+        - type: 'bitbucket'
+          link: 'https://bitbucket.org/AXVin'
+        - type: 'instagram'
+          link: 'https://instagram.com/__axvin__'
+        - type: 'trello'
+          link: 'https://trello.com/axvin'
+    version: 1.0
 
 # Extensions
 markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
+    - footnotes
+    - admonition
+    - codehilite:
+        guess_lang: false
+    - toc:
+        permalink: true
+    - meta
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
