@@ -1,5 +1,6 @@
 hero: An initiative to break the conventional barriers of PC only coding
 
+<img class="mch-logo" src="images/MCH_LOGO.svg" height="20%" width="20%">
 # Our Motive
 We were the first ones who recognised the need of mobile coding 
 
@@ -48,5 +49,6 @@ about it
 
 
 ???+ tip "About the Author"
-    ![AXVin Logo](images/axvin_sthumbnail.jpg)
+    <!-- ![AXVin Logo](images/axvin_sthumbnail.jpg) -->
+    <img id="owner-image" src="images/axvin_sthumbnail.jpg">
     # [AXVin](https://axvin.tk) is a self taught software developer, proficient in Python!

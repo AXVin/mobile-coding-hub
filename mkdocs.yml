@@ -7,8 +7,8 @@ site_author: 'AXVin'
 site_url: 'https://mobile-coding-hub.github.io'
 
 # Repository
-repo_name: 'mobile-coding-hub/mobile-coding-hub.github.io'
-repo_url: 'https://github.com/mobile-coding-hub/mobile-coding-hub.github.io'
+# repo_name: 'mobile-coding-hub/mobile-coding-hub.github.io'
+# repo_url: 'https://github.com/mobile-coding-hub/mobile-coding-hub.github.io'
 
 
 # Copyright
@@ -21,7 +21,9 @@ nav:
     - Termux:
         - Introduction: termux/index.md
         - Installation: termux/installation.md
-        - Customisation: termux/customisation.md
+        - Customisation:
+            - Introduction: termux/customisation/index.md
+            - Extra Keys: termux/customisation/extra_keys.md
     - Help & Support: support.md
 
 # Configuration
@@ -38,6 +40,7 @@ theme:
     feature:
         tabs: false
     logo: 'images/MCH_Mobile.svg'
+    favicon: 'images/MCH_Mobile.svg'
     shortcuts:
         help: 72     # h
         next: 78     # n
@@ -46,6 +49,10 @@ theme:
 
 extra_css:
   - 'stylesheets/extra.css'
+  - 'stylesheets/dark.css'
+
+extra_javascript:
+  - 'javascripts/extra.js'
 
 google_analytics:
   - 'UA-143099709-1'
